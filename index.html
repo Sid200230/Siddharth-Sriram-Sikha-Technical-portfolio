@@ -48,6 +48,8 @@
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#Projects" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Projects</span></a></li>
+          
         </ul>
       </nav>
     </div>
@@ -104,49 +106,49 @@
 <!-- ======= Skills Section ======= -->
 <section id="skills" class="skills section-bg">
   <div class="container">
-
-    <div class="section-title">
-      <h2>Skills</h2>
-    </div>
-
     <div class="row skills-content">
-
-      <div class="col-lg-6" data-aos="fade-up">
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="section-title">
+          <h2>Skills</h2>
+        </div>
 
         <div class="progress">
           <span class="skill">Libraries - OpenAI, Lang Chain, Hugging Face, Spark MLlib  OpenCV, Pytorch, Keras, Pytorch</span>
           <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar" role="progressbar" aria-valuenow="120" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
 
         <div class="progress">
-          <span class="skill">Database Management Systems: Docker, MySQL, Google Cloud Platform(GCP), AWS, ChromaDB</span>
+          <span class="skill">Database Management Systems: Docker, Google Cloud Platform(GCP), AWS, ChromaDB</span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
 
         <div class="progress">
-          <span class="skill">Interpersonal Skills : Team Player and Positive attitude</span>
+          <span class="skill">Interpersonal Skills: Team Player and Positive attitude</span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
 
         <div class="progress">
-          <span class="skill">Programming Languages :Python, C++, Matlab, Java</span>
+          <span class="skill">Programming Languages: Python, C++, Matlab, Java</span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
-
       </div>
 
+      <div class="col-lg-4 d-flex align-items-center justify-content-end" data-aos="fade-left">
+        <!-- Add your image here -->
+        <img src="assets/img/skills.png"  class="img-fluid">
+      </div>
     </div>
-
   </div>
 </section><!-- End Skills Section -->
+
 
 
 
@@ -237,6 +239,206 @@
 
       </div>
     </section><!-- End Resume Section -->
+
+    <hr>
+    
+
+    <section id="Projects" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Projects</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h3>Retrieval Augmented Generation System capable of answering questions regarding Carnegie Mellon's LTI Department</h3>
+          </div>
+        </div>
+        
+        <style>
+          .figure-caption {
+            text-align: center;
+          }
+        </style>
+        
+        <div class="row">
+          <div class="col-lg-12 content text-left">
+            <p>
+
+
+            </p>
+            <p>
+              The project aimed to develop a Retrieval Augmented Generation (RAG) system capable of answering questions related to Carnegie Mellon University (CMU) and the Language Technologies Institute (LTI). These topics require domain-specific knowledge that standard chatbots lack. The RAG system was designed to overcome these limitations by compiling and leveraging documents relevant to CMU and LTI.
+            </p>
+            <p>
+              The development of the RAG system involved extensive data preparation and annotation. This phase combined automated tools with manual efforts to ensure the accuracy and relevance of the compiled documents. The system incorporated both a multi-query retriever and a re-ranker, enhancing its ability to provide precise and comprehensive answers. This approach was compared against models using only a retriever or no retriever within the RAG framework.
+            </p>
+            <p>
+              The RAG system achieved a significant improvement in performance, as evidenced by its F1 score of 0.4161. This score was 1.57 times better than that of a 'retriever' only model and three times better than a 'no retriever' only model. These results highlight the effectiveness of incorporating both a multi-query retriever and a re-ranker into the RAG system, demonstrating its capability to handle domain-specific questions with higher accuracy.
+            </p>
+            <p>
+              The success of the RAG system in answering CMU and LTI-related questions underscores the importance of domain knowledge in developing specialized conversational AI systems. The combination of automated tools and manual efforts in data preparation proved instrumental in achieving improved performance metrics. The integration of a multi-query retriever and a re-ranker further enhanced the system's ability to generate accurate responses, showcasing the potential of such approaches in addressing domain-specific information retrieval and generation challenges.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <figure>
+              <img src="assets/img/rag_project.png" class="img-fluid" alt="">
+              <figcaption class="figure-caption">Proposed RAG Architecture</figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-5" style="margin-top: 200px;">
+            <figure>
+              <img src="assets/img/rag_results.png" class="img-fluid" alt="">
+              <figcaption class="figure-caption">Our RAG results</figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- End About Section 
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <img src="assets/img/rag_results.png" class="img-fluid" alt="">
+            <figcaption class="figure-caption">RAG results</figcaption>
+          </div>
+        </div>
+        -->
+        <hr>
+        <div style="margin-bottom: 50px;"></div>
+        <div class="row">
+          <div class="col-lg-12">
+            <h3>Building LLAMA2 architecture from scratch</h3>
+          </div>
+        </div>
+        
+        <style>
+          .figure-caption {
+            text-align: center;
+          }
+        </style>
+        
+        
+        <div class="row">
+          <div class="col-lg-12 content text-left">
+            <p>
+
+
+            </p>
+            <p>
+              Nowadays, large language models have become increasingly prominent in various fields due to their ability to generate reasoning like humans. One of the largest open-sourced language models in the current market is LLAMA2, and I undertook a project to develop a minimalistic version of LLAMA2 to gain a deeper understanding of its architecture. In this project, I focused on developing the core components of the LLAMA2 model, with a specific emphasis on positional encodings using Rotary Positional Embeddings (RoPE) due to their superior performance compared to conventional sinusoidal embeddings as described in the paper “Attention is all you need.” The aim was to evaluate the model's performance through zero-shot prompting on two datasets: SST (Sentiment Analysis) and CFIMDB (Content Filtering for IMDB reviews).
+            </p>
+            <p>
+              First, I implemented the core components of the LLAMA2 model, focusing on its architecture and incorporating Rotary Positional Embeddings for positional encodings. I then conducted zero-shot prompting experiments on both the SST dataset and the CFIMDB dataset. For evaluation, I measured the model's performance using Dev (development) and Test accuracy scores.  
+            </p>
+            <p>
+              Next, I fine-tuned the language model using the TinyStories dataset, which consists of machine-generated children’s stories. During fine-tuning, the model was trained on this domain-specific dataset to adapt its language generation capabilities accordingly. I evaluated the fine-tuned model's performance on both the SST and CFIMDB datasets, again measuring Dev and Test accuracy scores for each.
+            </p>
+            <p>
+              The results demonstrate the effectiveness of Rotary Positional Embeddings in enhancing the performance of language models like LLAMA2, particularly when fine-tuned on domain-specific datasets. The substantial improvement in accuracy scores post-fine-tuning highlights the importance of dataset adaptation for achieving better model performance in specific tasks. These findings contribute to a deeper understanding of language model architectures and the impact of positional encodings on their functionality and performance across different domains.
+            </p>
+          </div>
+        </div>
+        <div style="margin-bottom: 20px;"></div>
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <img src="assets/img/llama2_results.png" class="img-fluid" alt="">
+            <figcaption class="figure-caption">Results of the LLAMA2 model implemented</figcaption>
+          </div>
+        </div>
+
+
+        <hr>
+
+        <div style="margin-bottom: 50px;"></div>
+        <div class="row">
+          <div class="col-lg-12">
+            <h3>Building a stereo Visual Odometry framework from scratch</h3>
+          </div>
+        </div>
+        
+        <style>
+          .figure-caption {
+            text-align: center;
+          }
+        </style>
+        
+        
+        <div class="row">
+          <div class="col-lg-12 content text-left">
+            <p>
+
+
+            </p>
+            <p>
+              Simultaneous Localization and Mapping (SLAM) is a critical technology in robotics and autonomous systems, enabling them to navigate and map unknown environments in real time. However, the diversity of SLAM implementations often makes it challenging to select an appropriate framework for specific applications. In this paper, we address this issue by developing a stereo Visual Odometry SLAM system from scratch using Python. Our focus is on understanding and implementing key components such as the frontend, backend, and loop closure for accurate mapping and localization. We evaluate our system on the KITTI odometry dataset to assess its performance and identify areas for enhancement.
+            </p>
+            <p>
+              Our study begins with a detailed explanation of the theoretical foundations of SLAM, including concepts like Visual Odometry (VO), frontend feature matching, backend optimization, and loop closure detection. We then proceed to construct our SLAM system using Python, ensuring a clear understanding of each component's functionality and integration within the system. The KITTI odometry dataset, particularly sequence 00, serves as our evaluation benchmark, allowing us to test the system's performance under real-world conditions.
+            </p>
+            <p>
+              The evaluation of our SLAM system on the KITTI dataset reveals crucial insights into its performance and limitations. We observed that the amount of noise added to the odometry factors significantly impacts the backend optimization process. Too little noise prevents the optimizer from finding the optimal solution, while excessive noise leads to divergence. Through iterative testing, we identified optimal parameter values for noise, stride, and thresholds, improving the system's accuracy. Additionally, we compared the performance of different optimizers, noting variations in runtime and effectiveness.
+            </p>
+            <p>
+              In conclusion, our study presents a comprehensive framework for implementing Simultaneous Localization and Mapping (SLAM) using Python, tailored for stereo Visual Odometry applications. By evaluating the system on the KITTI odometry dataset and addressing key challenges such as noise optimization and backend performance, we contribute to the ongoing research in SLAM technology. Future work will focus on further refining the system's accuracy and exploring real-time operation possibilities.
+            </p>
+          </div>
+        </div>
+        <div style="margin-bottom: 20px;"></div>
+        <div class="row justify-content-center">
+          <div class="col-lg-5 text-center">
+            <img src="assets/img/Slam_results.png" class="img-fluid" alt="">
+            <figcaption class="figure-caption">Architecture of the SLAM pipeline proposed</figcaption>
+          </div>
+        </div>
+
+        <hr>
+        <div style="margin-bottom: 50px;"></div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h3>End to End Data Engineering Process on the NSL- KDD dataset</h3>
+          </div>
+        </div>
+        
+        <style>
+          .figure-caption {
+            text-align: center;
+          }
+        </style>
+        
+        <div class="row">
+          <div class="col-lg-12 content text-left">
+            <p>
+
+
+            </p>
+            <p>
+              In this project, the focus was on developing a system capable of predicting and classifying network intrusions using the NSL-KDD dataset, which comprises around 125,000 data points. The aim was to analyze the dataset, identify patterns, and similarities between intrusions to enhance network security.
+            </p>
+            <p>
+              The project began with extensive exploratory data analysis (EDA) and data cleaning to ensure data quality and reliability. Various data preprocessing techniques were employed to prepare the dataset for machine learning model implementation. The use of PySpark facilitated efficient data processing, while PostgreSQL aided in managing the dataset. Scikit-learn was utilized for implementing machine learning models, and Google Cloud Platform (GCP) tools were leveraged for model training and deployment.
+            </p>
+            <p>
+              After performing EDA, data cleaning, and implementing machine learning models, the system demonstrated robustness, accuracy, and scalability in predicting and classifying network intrusions. The combination of PySpark, PostgreSQL, Scikit-learn, and GCP tools played a crucial role in achieving efficient data processing, model training, and deployment.
+            </p>
+            <p>
+              The project's successful outcome underscores the importance of thorough data preprocessing, effective machine learning model implementation, and utilizing cloud-based platforms like GCP for scalability and deployment. The system's capabilities in network intrusion detection showcase its potential as a comprehensive and effective solution for enhancing cybersecurity measures.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <img src="assets/img/data_engineering.png" class="img-fluid" alt="">
+            <figcaption class="figure-caption">Data Engineering Pipeline Followed</figcaption>
+          </div>
+        </div>
+        
+
+      </div>
+    </section><!-- End About Section -->
+
+    
 
   </main>
 
