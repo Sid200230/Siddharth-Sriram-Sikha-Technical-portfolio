@@ -331,7 +331,7 @@
         <div style="margin-bottom: 50px;"></div>
         <div class="row">
           <div class="col-lg-12">
-            <h3>Building LLAMA2 architecture from scratch</h3>
+            <h3> Evaluation of Vibration Techniques to Measure Scuffing in Packaged Products</h3>
           </div>
         </div>
         
@@ -349,16 +349,50 @@
 
             </p>
             <p>
-              Nowadays, large language models have become increasingly prominent in various fields due to their ability to generate reasoning like humans. One of the largest open-sourced language models in the current market is LLAMA2, and I undertook a project to develop a minimalistic version of LLAMA2 to gain a deeper understanding of its architecture. In this project, I focused on developing the core components of the LLAMA2 model, with a specific emphasis on positional encodings using Rotary Positional Embeddings (RoPE) due to their superior performance compared to conventional sinusoidal embeddings as described in the paper “Attention is all you need.” The aim was to evaluate the model's performance through zero-shot prompting on two datasets: SST (Sentiment Analysis) and CFIMDB (Content Filtering for IMDB reviews).
+              Overview: This project was focused on analyzing and mitigating scuffing, a common packaging issue caused by surface abrasions during transportation. Scuffing can lead to material deformation, loss of printed information, and decreased product aesthetics, directly impacting customer satisfaction and industry standards. The project involved me coming up with a design for a test setup, conducting simulations, and collecting experimental data to develop insights and solutions for improving packaging durability.</p>
+            <p>
+              Key Contributions: </p>
+            <p>
+              Design and Manufacturing: </p>
             </p>
             <p>
-              First, I implemented the core components of the LLAMA2 model, focusing on its architecture and incorporating Rotary Positional Embeddings for positional encodings. I then conducted zero-shot prompting experiments on both the SST dataset and the CFIMDB dataset. For evaluation, I measured the model's performance using Dev (development) and Test accuracy scores.  
+              Conceptualized and developed two design iterations of a scuffing rig using SolidWorks and 3D-printed prototypes with the Ultimaker 5S.
             </p>
             <p>
-              Next, I fine-tuned the language model using the TinyStories dataset, which consists of machine-generated children’s stories. During fine-tuning, the model was trained on this domain-specific dataset to adapt its language generation capabilities accordingly. I evaluated the fine-tuned model's performance on both the SST and CFIMDB datasets, again measuring Dev and Test accuracy scores for each.
+              Iteration 1 revealed issues such as excessive friction and wobbling, leading to improvements in Iteration 2 by integrating bushings and springs for smoother vertical motion and better vibration simulation.
             </p>
             <p>
-              The results demonstrate the effectiveness of Rotary Positional Embeddings in enhancing the performance of language models like LLAMA2, particularly when fine-tuned on domain-specific datasets. The substantial improvement in accuracy scores post-fine-tuning highlights the importance of dataset adaptation for achieving better model performance in specific tasks. These findings contribute to a deeper understanding of language model architectures and the impact of positional encodings on their functionality and performance across different domains.
+              Sourced components like springs and bushings from McMaster-Carr to ensure precise fit and functionality.
+            </p>
+            <p>
+             Experimental Analysis: </p>
+            </p>
+            <p>
+             Conducted vibration tests using the Lansmont Saver 9X30 data logger to simulate real-world transport conditions, focusing on frequencies between 0-300 Hz.
+            </p>
+            <p>
+             Narrowed the frequency range to 3-40 Hz for optimal scuffing tests, significantly reducing testing time while maintaining accuracy.
+            </p>
+            <p>
+             Applied MATLAB for scuffing percentage analysis by comparing pixel degradation in pre- and post-test packaging images.
+            </p>
+            <p>
+             Results & Insights: </p>
+            </p>
+            <p>
+             Identified key vibration parameters contributing to scuffing, enabling better packaging design.
+            </p>
+             <p>
+             Provided actionable recommendations, including reduced testing frequencies, to improve the efficiency and reliability of packaging durability evaluations.
+            </p>
+             <p>
+             Tools & Techniques:
+               Software: SolidWorks, Ultimaker Cura, MATLAB, Lansmont SaverXware.
+               Hardware: 3D printers, vibration testing tables, and accelerometers.
+               Methodologies: Power Spectral Density (PSD) analysis, Constructed Probability Analysis, and Fast Fourier Transform (FFT) for data processin
+            </p>
+             <p>
+             Impact: The project demonstrated a practical approach to improving packaging durability through advanced mechanical design, simulation, and testing techniques. These findings have the potential to enhance industry standards and reduce costs associated with damaged goods, establishing a robust foundation for future innovation in packaging science.
             </p>
           </div>
         </div>
