@@ -376,7 +376,7 @@
         <div style="margin-bottom: 50px;"></div>
         <div class="row">
           <div class="col-lg-12">
-            <h3>Building a stereo Visual Odometry framework from scratch</h3>
+            <h3>Implementation of Reaction-Diffusion Textures for Haptic Experiments</h3>
           </div>
         </div>
         
@@ -394,18 +394,18 @@
 
             </p>
             <p>
-              Simultaneous Localization and Mapping (SLAM) is a critical technology in robotics and autonomous systems, enabling them to navigate and map unknown environments in real time. However, the diversity of SLAM implementations often makes it challenging to select an appropriate framework for specific applications. In this paper, we address this issue by developing a stereo Visual Odometry SLAM system from scratch using Python. Our focus is on understanding and implementing key components such as the frontend, backend, and loop closure for accurate mapping and localization. We evaluate our system on the KITTI odometry dataset to assess its performance and identify areas for enhancement.
+              This project explored the innovative conversion of reaction-diffusion patterns into 3D printed textured boards for use in haptic experiments. By combining advanced computational modeling, CAD design, and 3D printing, the project bridged the gap between digital pattern generation and tangible textures, achieving significant progress in tactile research.            </p>
+            <p>
+              The core of the project lay in developing two distinct methodologies for converting intricate 2D diffusion patterns into 3D textures:
             </p>
             <p>
-              Our study begins with a detailed explanation of the theoretical foundations of SLAM, including concepts like Visual Odometry (VO), frontend feature matching, backend optimization, and loop closure detection. We then proceed to construct our SLAM system using Python, ensuring a clear understanding of each component's functionality and integration within the system. The KITTI odometry dataset, particularly sequence 00, serves as our evaluation benchmark, allowing us to test the system's performance under real-world conditions.
+             1) Python-Based Contour Detection: Using the Gray-Scott model, patterns were generated and refined with scikit-image’s contour detection algorithm and the Ramer–Douglas-Peucker algorithm for smoother curves. The contours were transformed into 3D models using Fusion 360 Automate API, which included edge filleting and the addition of a base to enhance structural integrity. The final outputs were exported as STL files for 3D printing.
             </p>
             <p>
-              The evaluation of our SLAM system on the KITTI dataset reveals crucial insights into its performance and limitations. We observed that the amount of noise added to the odometry factors significantly impacts the backend optimization process. Too little noise prevents the optimizer from finding the optimal solution, while excessive noise leads to divergence. Through iterative testing, we identified optimal parameter values for noise, stride, and thresholds, improving the system's accuracy. Additionally, we compared the performance of different optimizers, noting variations in runtime and effectiveness.
+              2) MATLAB-Based Mesh Generation: This method utilized MATLAB’s meshz and Delaunay triangulation techniques to create 3D models from the diffusion patterns. The STL files generated were further refined in Fusion 360, ensuring accurate surface representation and base integration.
             </p>
             <p>
-              In conclusion, our study presents a comprehensive framework for implementing Simultaneous Localization and Mapping (SLAM) using Python, tailored for stereo Visual Odometry applications. By evaluating the system on the KITTI odometry dataset and addressing key challenges such as noise optimization and backend performance, we contribute to the ongoing research in SLAM technology. Future work will focus on further refining the system's accuracy and exploring real-time operation possibilities.
-            </p>
-          </div>
+             The 3D models were printed using a resin printer, followed by meticulous polishing with grit sandpaper and resin spraying to enhance transparency and tactile clarity. The textured boards, fabricated at a cost-effective $15 each, met the requirements for haptic experiments: visual transparency, modifiable textures, and scalability for various setups. This project demonstrated proficiency in Python, MATLAB, Fusion 360, and 3D printing, along with expertise in reaction-diffusion modeling and surface engineering. The successful implementation highlights the capability to integrate computational design with physical manufacturing, paving the way for advancements in tactile research and experimental design.
         </div>
         <div class="row">
           <div class="col-lg-6">
